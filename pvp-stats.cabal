@@ -1,0 +1,30 @@
+name:                pvp-stats
+version:             0.1.0.0
+-- synopsis:            
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              Taylor Fausak, Doug Beardsley
+maintainer:          mightybyte@gmail.com
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable pvp-stats
+  main-is:             Main.hs
+  -- other-modules:       
+  other-extensions:    OverloadedStrings
+  build-depends:
+    base            >=4.9  && <4.10,
+    bytestring      >=0.10 && <0.11,
+    containers      >=0.5  && <0.6,
+    directory       >=1.2  && <1.3,
+    filepath        >=1.4  && <1.5,
+    hackage-diff    >=0.2  && <0.3,
+    http-client     >=0.5  && <0.6,
+    http-client-tls >=0.3  && <0.4,
+    tar             >=0.5  && <0.6,
+    time            >=1.6  && <1.7,
+    zlib            >=0.6  && <0.7
+  hs-source-dirs:      src
+  default-language:    Haskell2010
